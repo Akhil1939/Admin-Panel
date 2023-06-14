@@ -1,0 +1,51 @@
+
+<div class="row p-2" style="background-color: whitesmoke;">
+    <div class="col-md-10 ">
+
+        <app-text-input ></app-text-input>
+    </div>
+    <div class="col-md-2 text-center ">
+        <button class="w-100 h-100" mat-raised-button><mat-icon>add</mat-icon> Add Country</button>
+    </div>
+
+    
+</div>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Name Column -->
+  <ng-container  matColumnDef="name">
+    <th class="text-center" mat-header-cell *matHeaderCellDef>Name</th>
+    <td class="text-center" mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <!-- Status Column -->
+  <ng-container matColumnDef="status">
+    <th class="text-center" mat-header-cell *matHeaderCellDef>Status</th>
+    <td class="text-center" mat-cell *matCellDef="let element">{{ element.status }}</td>
+  </ng-container>
+
+  <!-- Actions Column -->
+  <ng-container matColumnDef="actions">
+    <th class="text-center" mat-header-cell *matHeaderCellDef>Actions</th>
+    <td class="text-center" mat-cell *matCellDef="let element">
+      <button class="mx-2" mat-flat-button color="primary"><mat-icon>visibility</mat-icon> View</button>
+      <button class="mx-2" mat-flat-button color="accent"><mat-icon>edit</mat-icon> Edit</button>
+      <button class="mx-2" mat-flat-button color="warn"> <mat-icon>delete</mat-icon> Delete</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+<mat-paginator
+    (page)="handlePageEvent($event)"
+    [length]="length"
+    [pageSize]="pageSize"
+    [showFirstLastButtons]="showFirstLastButtons"
+    [pageSizeOptions]="pageSizeOptions"
+    [pageIndex]="pageIndex"
+    aria-label="Select page">
+</mat-paginator>

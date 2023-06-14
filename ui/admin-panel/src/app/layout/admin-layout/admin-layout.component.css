@@ -1,0 +1,5 @@
+@import url('../../components/layout/sidebar/sidebar.component.css');
+
+mat-sidenav{
+    width: 250px;
+}

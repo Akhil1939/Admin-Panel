@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.whitesmoke{
+
+  background-color: whitesmoke;
+}
+
+
+.mat-mdc-radio-button .mdc-form-field{
+    width: 100%;
+  }
+  .mdc-form-field>label{
+    position: absolute;
+    width:100%;
+    color: white;
+  }
+
+  .mat-mdc-radio-button .mdc-radio{
+    visibility: hidden;
+    padding: 0px;
+  }
+
+/* search-field-underline div */
+  .mat-mdc-form-field-subscript-wrapper{
+    display: none;
+}

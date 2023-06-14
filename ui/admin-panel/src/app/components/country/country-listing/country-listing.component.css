@@ -1,0 +1,8 @@
+table{
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+tbody, td, tfoot, th, thead, tr {
+    width: 35%;
+}

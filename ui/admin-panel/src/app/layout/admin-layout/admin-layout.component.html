@@ -1,0 +1,24 @@
+<div class="row">
+ 
+</div>
+<div class="row h-100">
+  <mat-sidenav-container class="example-container" *ngIf="shouldRun">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+      <app-sidebar></app-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="">
+        <button mat-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <app-header></app-header>
+        
+      </div>
+
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+</div>

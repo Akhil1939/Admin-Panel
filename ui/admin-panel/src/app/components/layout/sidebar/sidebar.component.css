@@ -1,0 +1,27 @@
+/* mat-radio-group{
+    display: flex;
+    flex-direction: column;
+}
+
+mat-radio-button.selected {
+    background-color: rgba(9, 17, 165, 0.45); 
+  }
+  */
+
+  .admin-sidebar{
+    
+    background-color: rgba(0, 0, 91, 0.832);
+    color: white;
+  } 
+  .selected{
+    background-color: rgba(7, 7, 186, 0.832);
+    color: white;
+  }
+  
+
+  mat-list-item a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+  }
