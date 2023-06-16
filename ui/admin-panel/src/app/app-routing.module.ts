@@ -22,13 +22,14 @@ const routes: Routes = [
       {
         path:'country',
         component:CountryListingComponent,
-        children:[
-          {
-            path:'add',
-            component:CountryUpsertComponent,
-          }
-        ]
+        
+          
+      },
+      {
+        path:'country/add',
+        component:CountryUpsertComponent,
       }
+    
     ]
       
   }

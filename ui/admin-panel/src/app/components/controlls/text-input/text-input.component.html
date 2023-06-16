@@ -1,7 +1,7 @@
 <mat-form-field class="mx-3">
-    <mat-label class="d-flex align-items-center"> <mat-icon class="">search</mat-icon>Search</mat-label>
+    <mat-label class="d-flex align-items-center"> {{label}}</mat-label>
     <div class="d-flex">
 
-        <input  matInput >
+        <input  matInput [(ngModel)]="text" (input)="onChange()" >
     </div>
   </mat-form-field>

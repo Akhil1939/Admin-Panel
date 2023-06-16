@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
+import { countryList } from 'src/app/models/countryList.model';
 
-interface countryList{
-  name:string;
-  status:number
 
-}
 @Component({
   selector: 'app-country-listing',
   templateUrl: './country-listing.component.html',

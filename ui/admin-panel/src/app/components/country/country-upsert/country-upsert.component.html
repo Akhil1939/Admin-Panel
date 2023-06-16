@@ -1,5 +1,8 @@
+<form  (ngSubmit)="onSubmit()">
 
-<mat-form-field>
-    <mat-label>Input</mat-label>
-    <input matInput>
-  </mat-form-field>
+  <app-text-input [label]="'Country Name'" (textChange)="onNameChange($event)" >  </app-text-input>
+
+  <app-dropdown [label]="'Country Status'" [items]="statusList" (selectedValueChange)="onStatusChange($event)" ></app-dropdown>
+  
+  <button type="submit">Submit</button>
+</form>

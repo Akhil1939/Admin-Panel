@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-text-input',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class TextInputComponent {
 
+  @Input() label: string='';
+  @Input() text: string='';
+  @Output() textChange = new EventEmitter<string>();
+
+  onChange(){
+    this.textChange.emit(this.text);
+    console.log("from tag", this.text);
+  }
 }
