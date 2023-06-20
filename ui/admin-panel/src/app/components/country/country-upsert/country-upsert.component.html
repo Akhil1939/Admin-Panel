@@ -1,25 +1,8 @@
 <form  (ngSubmit)="onSubmit()">
 
-<<<<<<< HEAD
-<div class="d-flex">
-
-  <form  class="mt-4 d-flex flex-column align-items-center">
-    <h3 class="mb-2" *ngIf="!updateForm">Add Country</h3>
-    <app-text-input class="mb-3 w-25" [label]="'Country name'" [placeHolder]="'Enter Name'" [pattern]="'[a-zA-Z ]*'" [errorString]="'Please enter valid name'" (valueChange)="onNameChange($event)"  ></app-text-input>
-    
-    <app-dropdown class="mb-3 w-25" [label]="'Country Status'" [optionsList]="statusOptions" (selectedValueChange)="onStatusChange($event)"></app-dropdown> 
-    
-    <button class="w-25" *ngIf="!updateForm" (click)="AddCountry()" mat-raised-button color="primary">Add</button>
-    <button class="w-25" *ngIf="updateForm" mat-raised-button color="accent">Update</button>
-
-
-</form>
-  </div>
-=======
   <app-text-input [label]="'Country Name'" (textChange)="onNameChange($event)" >  </app-text-input>
 
   <app-dropdown [label]="'Country Status'" [items]="statusList" (selectedValueChange)="onStatusChange($event)" ></app-dropdown>
   
   <button type="submit">Submit</button>
 </form>
->>>>>>> 63298cf39cb4ee5ba6a60cc7c01a9cdab676f740

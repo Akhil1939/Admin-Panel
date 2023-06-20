@@ -12,7 +12,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+
 @NgModule({
   imports: [],
   exports: [
@@ -24,7 +24,7 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
     MatListModule,
     MatTableModule,
     MatPaginatorModule,
-    MatFormFieldModule, MatInputModule, MatSelectModule,MatToolbarModule, AutoCompleteModule
+    MatFormFieldModule, MatInputModule, MatSelectModule,MatToolbarModule
   ],
 })
 export class MaterialModulesModule {}

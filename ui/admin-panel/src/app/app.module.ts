@@ -15,11 +15,6 @@ import { ActionButtonComponent } from './components/controlls/action-button/acti
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModulesModule } from './modules/material.modules';
-<<<<<<< HEAD
-import { HttpClientModule } from '@angular/common/http';
-=======
->>>>>>> 63298cf39cb4ee5ba6a60cc7c01a9cdab676f740
-import { DropdownComponent } from './components/controlls/dropdown/dropdown.component';
 import { DropdownComponent } from './components/controlls/dropdown/dropdown.component';
 
 @NgModule({
@@ -44,12 +39,7 @@ import { DropdownComponent } from './components/controlls/dropdown/dropdown.comp
     MaterialModulesModule,
     FormsModule,
     ReactiveFormsModule
-<<<<<<< HEAD
-    HttpClientModule,
-    FormsModule,
-=======
->>>>>>> 63298cf39cb4ee5ba6a60cc7c01a9cdab676f740
-    ReactiveFormsModule  ],
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -3,13 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
 import { countryList } from 'src/app/models/countryList.model';
 
-<<<<<<< HEAD
-interface countryList{
-  id:number;
-  name:string;
-  status:number
-=======
->>>>>>> 63298cf39cb4ee5ba6a60cc7c01a9cdab676f740
 
 @Component({
   selector: 'app-country-listing',
