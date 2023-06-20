@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AdminLayoutComponent {
   events: string[] = [];
-  opened: boolean=false;
+  isSidenavOpen: boolean=true;
 
   shouldRun = true;
 }

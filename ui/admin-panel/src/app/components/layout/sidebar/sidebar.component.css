@@ -10,18 +10,22 @@ mat-radio-button.selected {
 
   .admin-sidebar{
     
-    background-color: rgba(0, 0, 91, 0.832);
+    background-color: rgba(118, 118, 248, 0.832);
     color: white;
   } 
-  .selected{
-    background-color: rgba(7, 7, 186, 0.832);
+  /* .selected{
+    background-color: rgba(1, 1, 63, 0.832);
+    color: white;
+  } */
+  .router-link-active{
+    background-color: rgba(1, 1, 63, 0.832);
     color: white;
   }
-  
 
-  mat-list-item a{
+ div a{
     display: block;
     width: 100%;
+    height: 100%;
     text-decoration: none;
     color: white;
   }

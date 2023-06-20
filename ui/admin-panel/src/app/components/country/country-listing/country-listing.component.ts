@@ -1,21 +1,33 @@
-import { Component } from '@angular/core';
+import { CountryService } from './../../../services/country.service';
+import { Component, OnInit } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
 import { countryList } from 'src/app/models/countryList.model';
 
+<<<<<<< HEAD
+interface countryList{
+  id:number;
+  name:string;
+  status:number
+=======
+>>>>>>> 63298cf39cb4ee5ba6a60cc7c01a9cdab676f740
 
 @Component({
   selector: 'app-country-listing',
   templateUrl: './country-listing.component.html',
   styleUrls: ['./country-listing.component.css']
 })
-export class CountryListingComponent {
+export class CountryListingComponent implements OnInit {
+
+  constructor(private CountryService:CountryService) { }
   displayedColumns: string[] = ['name', 'status', 'actions'];
   dataSource:countryList[]=[
     {
+      id:1,
       name:'India',
       status:1
     },
     {
+      id:2,
       name:'USA',
       status:1
     },
@@ -36,5 +48,12 @@ export class CountryListingComponent {
     this.pageIndex = event.pageIndex;
     this.currentPage = event.pageIndex + 1;
     console.log(this.currentPage)
+  }
+
+  ngOnInit(): void {
+    this.CountryService.getCountryList().subscribe((res)=>{
+      console.log(res)
+    }
+    )
   }
 }

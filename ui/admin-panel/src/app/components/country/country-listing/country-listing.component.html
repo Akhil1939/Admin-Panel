@@ -34,7 +34,10 @@
     <th class="text-center" mat-header-cell *matHeaderCellDef>Actions</th>
     <td class="text-center" mat-cell *matCellDef="let element">
       <button class="mx-2" mat-flat-button color="primary"><mat-icon>visibility</mat-icon> View</button>
-      <button class="mx-2" mat-flat-button color="accent"><mat-icon>edit</mat-icon> Edit</button>
+      <a routerLink="{{element.id}}">
+
+        <button class="mx-2" mat-flat-button color="accent"><mat-icon>edit</mat-icon> Edit</button>
+      </a>
       <button class="mx-2" mat-flat-button color="warn"> <mat-icon>delete</mat-icon> Delete</button>
     </td>
   </ng-container>

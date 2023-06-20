@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+<mat-form-field appearance="outline">
+    <mat-label>{{ label }}</mat-label>
+    <input matInput placeholder="{{ placeHolder }}" pattern="{{ pattern }}" name="text" [(ngModel)]="text" (input)="onValueChange()"/>
+    <mat-error>{{errorString}}</mat-error>
+</mat-form-field>
+=======
 <mat-form-field class="mx-3">
     <mat-label class="d-flex align-items-center"> {{label}}</mat-label>
     <div class="d-flex">
@@ -5,3 +12,4 @@
         <input  matInput [(ngModel)]="text" (input)="onChange()" >
     </div>
   </mat-form-field>
+>>>>>>> 63298cf39cb4ee5ba6a60cc7c01a9cdab676f740

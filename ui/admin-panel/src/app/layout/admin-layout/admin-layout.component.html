@@ -1,7 +1,12 @@
 <div class="row">
- 
+  <app-header>
+    <!-- <button mat-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+
+    </app-header>
 </div>
-<div class="row h-100">
+<!-- <div class="row h-100">
   <mat-sidenav-container class="example-container" *ngIf="shouldRun">
     <mat-sidenav #sidenav mode="side" [(opened)]="opened">
       <app-sidebar></app-sidebar>
@@ -9,10 +14,7 @@
 
     <mat-sidenav-content>
       <div class="">
-        <button mat-button (click)="sidenav.toggle()">
-          <mat-icon>menu</mat-icon>
-        </button>
-        <app-header></app-header>
+        
         
       </div>
 
@@ -21,4 +23,12 @@
   </mat-sidenav-container>
 
   <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
-</div>
+</div> -->
+
+
+
+
+<mat-sidenav-container class="example-container h-100" >
+  <mat-sidenav mode="side" [opened]="isSidenavOpen" class="h-100"><app-sidebar></app-sidebar></mat-sidenav>
+  <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container>

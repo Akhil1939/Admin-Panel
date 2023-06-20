@@ -1,8 +1,8 @@
 
 <div class="admin-sidebar">
     <mat-nav-list>
-        <mat-list-item *ngFor="let link of links"  [class.selected]="selectedOption === link.name ">
-           <a  routerLink='/{{link.name}}'  (click)="ActiveLink($event)">{{ link.name }} 	<mat-icon>{{link.icon}}</mat-icon></a>
-        </mat-list-item>
+        <div *ngFor="let link of links"   >
+           <a  routerLink='/{{link.name}}' class="d-flex align-items-center py-2" routerLinkActive="router-link-active"><mat-icon class="mx-2">{{link.icon}}</mat-icon> {{ link.name }} 	</a>
+        </div>
       </mat-nav-list>
 </div>
